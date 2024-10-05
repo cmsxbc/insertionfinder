@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/include
+AM_CPPFLAGS = -I$(top_srcdir)/include $(BOOST_CPPFLAGS)
 noinst_LTLIBRARIES = libfinder.la
 libfinder_la_SOURCES = utils.hpp \
     brute-force.cpp brute-force-worker.cpp \

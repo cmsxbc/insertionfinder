@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/include
+AM_CPPFLAGS = -I$(top_srcdir)/include $(BOOST_CPPFLAGS)
 SUBDIRS = algorithm case cli cube finder improver insertion twist utils
 bin_PROGRAMS = insertionfinder
 insertionfinder_SOURCES = main.cpp

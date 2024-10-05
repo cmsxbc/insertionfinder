@@ -31,3 +31,13 @@ Configurations:
   --json                                use JSON output
   --verbose                             verbose
 ```
+
+# Build
+
+## On Mac OS
+
+It's recommended to build with static boost.
+
+```sh
+./configure --with-boost=$(brew --prefix boost) --enable-static-boost
+```
